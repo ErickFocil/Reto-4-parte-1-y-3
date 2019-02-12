@@ -13,15 +13,19 @@ public class Reto4 {
             System.out.println("Indique el tipo de boleto (A: Adulto, N: Niño, I: INAPAM, B: Adulto mayor sin credencial)");
             opcion = sc.next().charAt(0);
             switch(opcion){
+                case 'a':
                 case 'A':
                     costo_boleto = 100.00;
                     break;
+                case 'n':
                 case 'N':
                     costo_boleto = 70.00;
                     break;
+                case 'i':
                 case 'I':
                     costo_boleto = 50.00;
                     break;
+                case 'b':
                 case 'B':
                     costo_boleto = 70.00;
                     break;

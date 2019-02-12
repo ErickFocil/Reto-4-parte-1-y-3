@@ -34,6 +34,7 @@ public class Reto4 {
             System.out.println("Desea otro boleto? (s/n)");
             opcion = sc.next().charAt(0);
         }while(opcion != 'n');
+        System.out.println("Fin del programa");
     }
     
 }

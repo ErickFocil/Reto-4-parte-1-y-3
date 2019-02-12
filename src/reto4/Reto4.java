@@ -1,16 +1,39 @@
 package reto4;
 
-/**
- *
- * @author edfoc
- */
+import java.util.Scanner;
+
 public class Reto4 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        char opcion;
+        double costo_boleto;
+        
+        do{
+            System.out.println("Indique el tipo de boleto (A: Adulto, N: Niño, I: INAPAM, B: Adulto mayor sin credencial)");
+            opcion = sc.next().charAt(0);
+            switch(opcion){
+                case 'A':
+                    costo_boleto = 100;
+                    break;
+                case 'N':
+                    costo_boleto = 70;
+                    break;
+                case 'I':
+                    costo_boleto = 50;
+                    break;
+                case 'B':
+                    costo_boleto = 70;
+                    break;
+                default:
+                    System.out.println("Opcion no disponible...");
+                    break;
+                
+            }
+            
+            System.out.println("Desea otro boleto? (s/n)");
+            opcion = sc.next().charAt(0);
+        }while(opcion != 'n');
     }
     
 }
